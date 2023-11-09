@@ -5,9 +5,11 @@ case of example mixedList we must get the answer 8 ( 1, 123, 1, 45, 1, 2, 3456, 
 
 
 def print_only_int(mixed_list):
+    counter = 0
     for element in mixed_list:
         if type(element) == int:
-            print(element)
+            counter += 1
+    print(f"Количество целых чисел = {counter}")
 
 
 if __name__ == '__main__':
